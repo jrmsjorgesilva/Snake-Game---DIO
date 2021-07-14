@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 95vh;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #34a534;
+}
+
+.title {
+  font-size: 50px;
+  margin: 0;
+  padding: 30px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, orange, gold, lightgreen, cyan, dodgerblue);
+  animation: sliding 30s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tabuleiro {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+@keyframes sliding {
+  to {
+    background-position: -400vw;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
